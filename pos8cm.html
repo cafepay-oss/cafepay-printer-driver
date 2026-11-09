@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>print</title>
+        <meta charset="UTF-8">
+        <style>
+            td, th {
+                border: 1px solid black;
+                padding: 2px;
+                text-align: center;
+            }
+            td:first-child ,th:first-child {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px 0px 1px 0px;
+                text-align: right;
+            }
+            td:last-child ,th:last-child {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px 0px 1px 0px;
+            }
+            @page {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: Tahoma;
+                font-size: 14px;
+                border: 1.5px solid black;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; width: 7cm;">
+        <div style="text-align: center; font-size: 16px; font-weight: bold;
+            border-bottom: 2px solid black; padding: 0.2cm;">کافه نمونه</div>
+        <div style="background-color: #999999; text-align: center; font-size: 13px;
+            border-bottom: 2px solid black; padding: 0.1cm;">فاکتور فروش</div>
+        <div style="font-size: 13px; direction: rtl;
+            border-bottom: 2px solid black; padding: 0.1cm;">
+            <div style="display: flex; padding: 0.1cm;">
+                <div style="width: 50%;">
+                    شماره: <span style="font-weight: bold; font-size: 14px;">۱۲۶</span>
+                </div>
+                <div style="width: 50%;">
+                    کاربر: مدیر
+                </div>
+            </div>
+            <div style="display: flex; padding: 0.1cm;">
+                <div style="width: 50%;">
+                    تاریخ: <span>۱۳۹۹/۰۷/۲۵</span>
+                </div>
+                <div style="width: 50%;">
+                    ساعت: <span>۲۱:۳۷</span>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; font-size: 16px; font-weight: bold;
+            padding: 0.2cm;">میز ۱۴</div>
+        <table style="direction: rtl; border-bottom: 2px solid black; font-size: 12px; border-collapse: collapse;">
+            <tr>
+                <th>
+                    عنوان
+                </th>
+                <th>
+                    تعداد
+                </th>
+                <th>
+                    قیمت
+                </th>
+                <th>
+                    قیمت کل
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    استیک گوشت با سس مخصوص نمونه
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    1,500,000
+                </td>
+                <td>
+                    3,000,000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    سالاد سزار
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    380,000
+                </td>
+                <td>
+                    380,000
+                </td>
+            </tr>
+        </table>
+        <div style="background-color: #aaaaaa; text-align: center; font-size: 13px; font-weight: bold;
+            border-bottom: 2px solid black; padding: 0.15cm;">جمع کل: 3,380,000 ریال</div>
+        <div style="background-color: hsl(0, 0%, 60%); text-align: center; font-size: 11px;
+            padding: 0.1cm;">cafepay.app کافه پی</div>
+    </body>
+</html>

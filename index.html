@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CafePay</title>
+  </head>
+  <body>
+    <input type="url" id="cafepay-url" name="cafepay-url" />
+    <button id="submit">submit</button>
+    <script type="text/javascript">
+      const redirect = function(){
+        alert('redirecting')
+        window.location.replace(document.getElementById('cafepay-url').value)
+      }
+      document.getElementById('submit').onclick = redirect
+      // Get the input field
+      var input = document.getElementById("cafepay-url");
+
+      // Execute a function when the user releases a key on the keyboard
+      input.addEventListener("keyup", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          // Cancel the default action, if needed
+          event.preventDefault();
+          // Trigger the button element with a click
+          redirect();
+        }
+      });
+    </script>
+  </body>
+</html>
